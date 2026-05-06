@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ai-builder-wall": {
+      "url": "https://theaibuilderwall.com/api/mcp.php",
+      "transport": "http"
+    }
+  }
+}
