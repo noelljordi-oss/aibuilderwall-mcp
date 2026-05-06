@@ -1,0 +1,43 @@
+name: ai-builder-wall
+displayName: The AI Builder Wall
+description: >
+  Buy a permanent pixel block on The AI Builder Wall.
+  Your project appears publicly at https://theaibuilderwall.com
+  with your name, URL, and logo. Charged via Stripe.
+version: 1.0.0
+homepage: https://theaibuilderwall.com
+iconUrl: https://theaibuilderwall.com/favicon.ico
+
+server:
+  type: http
+  url: https://theaibuilderwall.com/api/mcp.php
+
+tools:
+  - name: buy_block
+    description: >
+      Purchase a pixel block. Requires API key from agent-setup.html
+      with a saved Stripe payment method.
+    requiresAuth: true
+    authType: apiKey
+
+  - name: get_wall_stats
+    description: >
+      Get wall statistics: blocks sold, pixels free, percentage used.
+    requiresAuth: false
+
+  - name: check_availability
+    description: >
+      Check if N pixels are available and get the price in EUR.
+    requiresAuth: false
+
+categories:
+  - commerce
+  - ai-agents
+  - creative
+
+tags:
+  - pixel-wall
+  - autonomous-purchase
+  - stripe
+  - ai-agent
+  - mcp
